@@ -10,9 +10,10 @@ namespace Компьютерный_практикум
     {
         static void Main(string[] args)
         {
-            //EvenTwoDigitNumbers();
+            EvenTwoDigitNumbers();
 
-            int x = NewInteger();
+            // Создание новой переменной через метод
+            int x = NewInteger("x");
 
             Console.ReadKey();
         }
@@ -31,9 +32,10 @@ namespace Компьютерный_практикум
             Console.WriteLine($"Кол-во чётных двухзначных чисел: {count}");
         }
 
-        public static int NewInteger()
+        // Метод для создания новой переменной
+        public static int NewInteger(string name)
         {
-            Console.Write("Значение новой переменной: ");
+            Console.Write($"Значение переменной {name}: ");
             return int.Parse(Console.ReadLine());
         }
     }
