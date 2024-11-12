@@ -14,6 +14,11 @@ namespace Компьютерный_практикум
 
             // Создание новой переменной через метод
             int x = NewInteger("x");
+            // Строка сверху тоже самое что и:
+            //
+            // Console.Write($"Значение переменной x: ");
+            // int x = int.Parse(Console.ReadLine());
+            //
 
             Console.ReadKey();
         }
